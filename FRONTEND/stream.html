@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U|STREAM</title>
+    <link rel="stylesheet" href="assets/stream.css">
+    <link rel="icon" href="assets/images/logo.webp" type="image/webp">
+</head>
+<body>
+    <header class="nav_bar">
+        <nav>
+            <div class="logo_box" onclick="window.location.href='index.html'">
+                <img src="assets/images/logo.webp" alt="U|STREAM Logo" class="main_logo">
+                <span class="logo_text">U|STREAM</span>
+            </div>
+        </nav>
+    </header>
+    <main class="stream_page">
+        <div class="video_box">
+            <video id="main-video" controls autoplay>
+                Tu navegador no soporta el formato de video.
+            </video>
+        </div>
+        <div class="video_details">
+            <h1 id="video-title">Cargando título...</h1>
+            <span id="video-category" class="category_tag"></span>
+        </div>
+        <div class="content_layout">
+            <section class="comments_section">
+                <h3>Comentarios</h3>
+                <form id="comment-form" class="comment_form">
+                    <input type="text" id="comment-text" placeholder="Escribe un comentario..." required>
+                    <button type="submit">Publicar</button>
+                </form>
+                <div id="comments-list"></div>
+            </section>
+            <aside class="recommendation_panel">
+                <h3>Recomendados</h3>
+                <div id="recommended-list"></div>
+            </aside>
+        </div>
+    </main>
+    <script src="assets/stream.js"></script>
+</body>
+</html>

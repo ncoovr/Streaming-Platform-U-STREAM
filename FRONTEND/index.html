@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U|STREAM</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" href="assets/images/logo.webp" type="image/webp">
+</head>
+<body>
+    <header class="nav_bar">
+        <nav class="nav_inner">
+            <div class="logo_box">
+                <img src="assets/images/logo.webp" alt="U|STREAM Logo" class="main_logo">
+                <span class="logo_text">U|STREAM</span>
+            </div>
+            <div class="nav_buttons">
+                <button type="button" data-category="home" onclick="filterArtist('home')" class="nav_button active">Home</button>
+                <button type="button" data-category="Reggaeton" onclick="filterArtist('Reggaeton')" class="nav_button">Reggaeton</button>
+                <button type="button" data-category="Trap" onclick="filterArtist('Trap')" class="nav_button">Trap</button>
+                <button type="button" data-category="Trap Argentino" onclick="filterArtist('Trap Argentino')" class="nav_button">Trap Argentino</button>
+                <button type="button" data-category="Alternativa" onclick="filterArtist('Alternativa')" class="nav_button">Alternativa</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero_block hero_youtube">
+            <h1>Descubre tu música</h1>
+            <p>Streaming moderno para los desocupados</p>
+        </section>
+        <section class="video_grid" id="video-container"></section>
+    </main>
+    <footer class="footer_bar">
+        <p>U|STREAM - Plataforma de Streaming</p>
+    </footer>
+    <script src="assets/scripts.js"></script>
+</body>
+</html>
